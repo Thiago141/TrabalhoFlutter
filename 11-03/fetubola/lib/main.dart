@@ -136,11 +136,14 @@ class HomeScaffold extends StatelessWidget {
         padding: AppStyle.screenPadding,
         child: Column(
           children: [
-            Row(
-              children: [
-                Text('Últimas Notícias', style: AppStyle.sectionTitleStyle),
-                SearchWidget(),
-              ],
+            SizedBox(
+              height: 50,
+              child: Row(
+                children: [
+                  Text('Últimas Notícias', style: AppStyle.sectionTitleStyle),
+                  Expanded(child: SearchWidget()),
+                ],
+              ),
             ),
             Expanded(
               child: ListView.builder(

@@ -5,7 +5,7 @@ import 'package:fetubola/ui/widgets/search_widget.dart';
 import 'package:fetubola/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
-//TODO: Adicionar um sistema de busca para filtrar as notícias por título ou conteúdo.
+//TODO: finalizar o sistema de busca para filtrar as notícias por título ou conteúdo utilizando PROVIDER.
 void main() {
   runApp(const MainApp());
 }
@@ -117,6 +117,7 @@ class MainApp extends StatelessWidget {
     ];
 
     return MaterialApp(
+      // providers
       debugShowCheckedModeBanner: false,
       home: HomeScaffold(news: news),
     );
@@ -141,7 +142,7 @@ class HomeScaffold extends StatelessWidget {
               child: Row(
                 children: [
                   Text('Últimas Notícias', style: AppStyle.sectionTitleStyle),
-                  Expanded(child: SearchWidget()),
+                  Expanded(child: SearchWidget(news: news)),
                 ],
               ),
             ),

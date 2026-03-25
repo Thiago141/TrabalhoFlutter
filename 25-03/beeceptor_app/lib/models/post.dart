@@ -22,7 +22,7 @@ class Post {
       title: json['title'],
       body: json['body'],
       link: json['link'],
-      commentCount: json['commentCount'],
+      commentCount: json['comment_count'],
     );
   }
 
@@ -33,7 +33,7 @@ class Post {
       'title': title,
       'body': body,
       'link': link,
-      'commentCount': commentCount,
+      'comment_count': commentCount,
     };
   }
 }

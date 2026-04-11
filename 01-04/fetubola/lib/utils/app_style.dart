@@ -4,7 +4,7 @@ class AppStyle {
   AppStyle._();
 
   // Colors
-  static const Color primaryColor = Colors.green;
+  static const Color primaryColor = Colors.orange;
   static const Color onPrimaryColor = Colors.white;
   static const Color titleColor = Colors.black;
 

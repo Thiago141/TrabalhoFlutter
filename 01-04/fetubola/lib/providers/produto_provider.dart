@@ -42,7 +42,7 @@ class ProdutoProvider extends ChangeNotifier {
     await fetchProdutos();
   }
 
-  Future<void> deleteProduto(int id) async {
+  Future<void> deleteProduto(String id) async {
     await service.deleteProduto(id);
     await fetchProdutos();
   }

@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import '../models/produto.dart';
 
 class ProdutoService {
-  final Dio dio = Dio(BaseOptions(baseUrl: "https://fakestoreapi.com"));
+  final Dio dio = Dio(BaseOptions(baseUrl: "https://69dd632484f912a264050800.mockapi.io/api/v1"));
 
   Future<List<Produto>> getProdutos() async {
     final response = await dio.get("/products");
@@ -19,7 +19,7 @@ class ProdutoService {
     await dio.put("/products/${produto.id}", data: produto.toJson());
   }
 
-  Future<void> deleteProduto(int id) async {
+  Future<void> deleteProduto(String id) async {
     await dio.delete("/products/$id");
   }
 }

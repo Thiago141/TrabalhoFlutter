@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) => ProdutoProvider(),
+      create: (_) => ProdutoProvider()..fetchProdutos(),
       child: MaterialApp.router(
         routerConfig: router,
         debugShowCheckedModeBanner: false,

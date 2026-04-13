@@ -33,13 +33,9 @@ class AppStyle {
     fontStyle: FontStyle.italic,
   );
 
-  static const TextStyle authorStyle = TextStyle(
-    fontWeight: FontWeight.bold,
-  );
+  static const TextStyle authorStyle = TextStyle(fontWeight: FontWeight.bold);
 
-  static const TextStyle appBarTitleStyle = TextStyle(
-    color: onPrimaryColor,
-  );
+  static const TextStyle appBarTitleStyle = TextStyle(color: onPrimaryColor);
 
   // Icon Theme
   static const IconThemeData appBarIconTheme = IconThemeData(
